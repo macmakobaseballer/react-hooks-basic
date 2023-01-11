@@ -1,4 +1,3 @@
-import { cleanup } from "@testing-library/react";
 import React, { useState, useEffect } from "react";
 
 export const Timer = () => {
@@ -12,7 +11,6 @@ export const Timer = () => {
     const interval = setInterval(time, 1000);
     return () => {
       clearInterval(interval);
-      console.log("cleared");
     };
   }, []);
 
