@@ -16,7 +16,7 @@ export const ApiFetch = () => {
       .then((res) => {
         setPosts(res.data);
       });
-  }, [clicked]);
+  }, [clicked, id]);
 
   return (
     <div>
